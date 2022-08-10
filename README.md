@@ -2,7 +2,7 @@
 A Java library for GS1 EPCIS v2.0
 
 
-# Maven dependencies
+**Maven dependencies**
 ```xml
 <dependency>
     <groupId>org.oliot.epcis-x</groupId>
@@ -17,14 +17,14 @@ A Java library for GS1 EPCIS v2.0
 </dependency>
 ```
 
-# Example: Capture (XML)
+**Example: Capture (XML)**
 ```java
 EPCISCaptureClient client = new EPCISCaptureClient(url);		
 client.addObjectEvent(new ObjectEventBuilder("2020-10-15T20:33:31.116Z", "-09:00", ActionType.OBSERVE).build());
 HttpResponse<String> result = client.send();
 ```
 
-# Example: Query.Poll (XML)
+**Example: Query.Poll (XML)**
 ```java
 EPCISQueryClient client = new EPCISQueryClient(url);
 		
